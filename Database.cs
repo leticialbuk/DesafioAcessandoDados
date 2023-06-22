@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Blog
 {
-    public static class DataBase 
+    public static class Database 
     {
         public static SqlConnection Connection;
     }

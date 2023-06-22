@@ -9,13 +9,13 @@ namespace Blog
 
         static void Main(string[] args)
         {
-            var connection = new SqlConnection(CONNECTION_STRING);
-            connection.Open();
+            Database.Connection = new SqlConnection(CONNECTION_STRING);
+            Database.Connection.Open();
 
             Load();
 
             Console.ReadKey();
-            connection.Close();
+            Database.Connection.Close();
         }
 
         private static void Load() 
